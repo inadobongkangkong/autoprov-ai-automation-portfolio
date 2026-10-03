@@ -51,11 +51,35 @@
 
       <div class="work-list">
         <article class="project project-dark">
-          <div class="project-visual inbox-visual">
-            <div class="visual-top"><span>AI BUSINESS INBOX</span><span class="status">LIVE SYSTEM</span></div>
-            <div class="inbox-card hot"><span class="dot"></span><div><b>New lead detected</b><small>Intent: Sales inquiry</small></div><strong>HOT</strong></div>
-            <div class="inbox-card"><span class="dot"></span><div><b>Customer support</b><small>Order status request</small></div><strong>SUPPORT</strong></div>
-            <div class="inbox-card"><span class="dot"></span><div><b>Booking request</b><small>Appointment inquiry</small></div><strong>ACTION</strong></div>
+          <div class="project-visual inbox-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="visual-top"><span>AI BUSINESS INBOX</span><span class="status">LIVE SYSTEM</span></div>
+                <div class="inbox-card hot"><span class="dot"></span><div><b>New lead detected</b><small>Intent: Sales inquiry</small></div><strong>HOT</strong></div>
+                <div class="inbox-card"><span class="dot"></span><div><b>Customer support</b><small>Order status request</small></div><strong>SUPPORT</strong></div>
+                <div class="inbox-card"><span class="dot"></span><div><b>Booking request</b><small>Appointment inquiry</small></div><strong>ACTION</strong></div>
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-workflow.png" alt="Actual AI Business Inbox n8n workflow overview" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-duplicate-protection.png" alt="Actual Duplicate Message Check configuration in n8n" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-ai-agent.png" alt="Actual AutoProv AI Support Agent and Lead Capture workflow" loading="lazy">
+              </div>
+
+              <div class="carousel-slide">
+                <img src="ai-business-inbox-messenger-result.png" alt="Actual Messenger customer support response" loading="lazy">
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 5</div>
           </div>
           <div class="project-info">
             <span class="tag">01 / CUSTOMER OPERATIONS</span>
@@ -67,15 +91,29 @@
         </article>
 
         <article class="project project-light">
-          <div class="project-visual messenger-visual">
-            <div class="phone">
-              <div class="phone-head"><span>●</span> Business Messenger <small>online</small></div>
-              <div class="bubble user">I'd like to book an appointment.</div>
-              <div class="bubble ai">Absolutely. What date works for you?</div>
-              <div class="bubble user">Tomorrow afternoon.</div>
-              <div class="bubble ai">I can help with that. Let me capture your details first.</div>
-              <div class="typing">● ● ●</div>
+          <div class="project-visual messenger-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="phone">
+                  <div class="phone-head"><span>●</span> Business Messenger <small>online</small></div>
+                  <div class="bubble user">I'd like to book an appointment.</div>
+                  <div class="bubble ai">Absolutely. What date works for you?</div>
+                  <div class="bubble user">Tomorrow afternoon.</div>
+                  <div class="bubble ai">I can help with that. Let me capture your details first.</div>
+                  <div class="typing">● ● ●</div>
+                </div>
+              </div>
+
+              <div class="carousel-slide"><img src="messenger-01-workflow.png" alt="Actual AutoProv Facebook Messenger automation workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-02-ai-agent.png" alt="Actual AutoProv AI Support Agent workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-03-business-knowledge.png" alt="Actual Business Knowledge configuration" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-04-intent-detection.png" alt="Actual Intent Detection node" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-05-lead-capture.png" alt="Actual Lead Capture and Google Sheets logging workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="messenger-06-lead-log.png" alt="Actual Lead Log Google Sheets result" loading="lazy"></div>
             </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 7</div>
           </div>
           <div class="project-info">
             <span class="tag">02 / CUSTOMER EXPERIENCE</span>
@@ -87,10 +125,22 @@
         </article>
 
         <article class="project project-accent">
-          <div class="project-visual receipt-visual">
-            <div class="receipt"><div class="receipt-brand">MOTOPLUS</div><div class="receipt-line">RACING PLUG W/ CAP FAITO <b>×5</b></div><div class="receipt-line">CHAIN LUBE <b>×3</b></div><div class="receipt-line">BRAKE PAD <b>×2</b></div><hr><div class="receipt-total">AI EXTRACTED ✓</div></div>
-            <div class="flow-arrow">→</div>
-            <div class="stock-card"><span>INVENTORY</span><strong>20 → 25</strong><small>Stock updated ✓</small></div>
+          <div class="project-visual receipt-visual portfolio-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-slide is-active">
+                <div class="receipt"><div class="receipt-brand">MOTOPLUS</div><div class="receipt-line">RACING PLUG W/ CAP FAITO <b>×5</b></div><div class="receipt-line">CHAIN LUBE <b>×3</b></div><div class="receipt-line">BRAKE PAD <b>×2</b></div><hr><div class="receipt-total">AI EXTRACTED ✓</div></div>
+                <div class="flow-arrow">→</div>
+                <div class="stock-card"><span>INVENTORY</span><strong>20 → 25</strong><small>Stock updated ✓</small></div>
+              </div>
+
+              <div class="carousel-slide"><img src="receipt-01-workflow.jpg" alt="Actual Receipt to Inventory n8n workflow" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-02-extraction.jpg" alt="Actual receipt extraction and AI processing result" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-03-inventory-update.jpg" alt="Actual Loyverse inventory item list" loading="lazy"></div>
+              <div class="carousel-slide"><img src="receipt-04-inventory-audit.jpg" alt="Actual Receipt Items and inventory audit data in Google Sheets" loading="lazy"></div>
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project image">→</button>
+            <div class="carousel-counter" aria-live="polite">1 / 5</div>
           </div>
           <div class="project-info">
             <span class="tag">03 / OPERATIONS AUTOMATION</span>

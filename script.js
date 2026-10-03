@@ -1,3 +1,38 @@
+
+/* AutoProv project image carousels */
+document.querySelectorAll('[data-carousel]').forEach(carousel => {
+  const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+  const prev = carousel.querySelector('.carousel-prev');
+  const next = carousel.querySelector('.carousel-next');
+  const counter = carousel.querySelector('.carousel-counter');
+  let current = 0;
+
+  if (slides.length <= 1) {
+    if (prev) prev.hidden = true;
+    if (next) next.hidden = true;
+    if (counter) counter.hidden = true;
+    return;
+  }
+
+  const showSlide = index => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('is-active', i === current);
+    });
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+  };
+
+  prev?.addEventListener('click', () => showSlide(current - 1));
+  next?.addEventListener('click', () => showSlide(current + 1));
+
+  carousel.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') showSlide(current - 1);
+    if (event.key === 'ArrowRight') showSlide(current + 1);
+  });
+
+  carousel.tabIndex = 0;
+});
+
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
 const cases = {
@@ -10,7 +45,7 @@ const cases = {
   messenger: {
     label: '02 / CUSTOMER EXPERIENCE',
     title: '24/7 AI Messenger Agent',
-    body: `<p><b>Goal:</b> give businesses a consistent first-line customer support agent on Facebook Messenger.</p>
+    body: `<p><b>Goal:</b> give businesses a practical first-line customer support agent on Facebook Messenger.</p>
     <ul><li>Receives Messenger webhook events.</li><li>Parses customer messages and detects intent.</li><li>Uses generic business knowledge that can be customized per client.</li><li>Captures qualified leads into a structured Google Sheets log.</li><li>Responds naturally while supporting multilingual/Taglish conversations.</li></ul>`
   },
   inventory: {
@@ -19,12 +54,6 @@ const cases = {
     body: `<p><b>Goal:</b> remove repetitive receipt encoding and reduce inventory update errors.</p>
     <ul><li>Receipt image enters the workflow.</li><li>OCR extracts the receipt text.</li><li>AI converts the receipt into structured line items.</li><li>Products are matched against the inventory system.</li><li>Duplicate protection, approval controls, status tracking, error handling and audit logs protect the process.</li></ul>`
   },
-  crm: {
-    label: '04 / SALES AUTOMATION',
-    title: 'AI Lead Qualification & CRM',
-    body: `<p><b>Goal:</b> turn raw inquiries into actionable sales opportunities.</p>
-    <ul><li>Lead data enters through a webhook.</li><li>AI analyzes intent, pain point, budget, timeline and fit.</li><li>A structured lead score and classification are produced.</li><li>Qualified contacts and opportunities are created in the CRM.</li><li>The workflow can be extended with notifications, routing and reporting.</li></ul>`
-  }
 };
 document.querySelectorAll('[data-modal]').forEach(btn => btn.addEventListener('click', () => {
   const item = cases[btn.dataset.modal];

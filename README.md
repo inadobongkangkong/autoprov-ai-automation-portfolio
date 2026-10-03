@@ -1,33 +1,30 @@
-# AutoProv Portfolio V4 — Team Edition
+# AutoProv Portfolio V4 — Final 3-Project Evidence Carousels
 
-A static, responsive portfolio website for AutoProv, positioned as an AI automation team.
+This package updates the existing AutoProv V4 portfolio with real screenshots from the completed portfolio builds.
 
-## Featured systems
-- AI Business Inbox
-- 24/7 AI Messenger Agent
-- Receipt → Inventory Automation
-- AI Lead Qualification & CRM
+## Active projects
 
-## Stack
-HTML • CSS • JavaScript • n8n • OpenAI • APIs • GitHub Pages
+### 01 — AI Business Inbox
+1. Existing cover
+2. Actual workflow
+3. Duplicate protection
+4. AI support agent
+5. Messenger result
 
-## Deploy to GitHub Pages
+### 02 — 24/7 AI Messenger Agent
+1. Existing cover
+2. Actual full Messenger workflow
+3. AI Agent
+4. Business Knowledge
+5. Intent Detection
+6. Lead Capture
+7. Lead Log
 
-### Option A — simplest
-1. Create a GitHub repository, e.g. `autoprov-ai-automation-portfolio`.
-2. Upload all files from this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose `main` and `/ (root)`, then Save.
-6. GitHub will publish the site at `https://YOUR-USERNAME.github.io/REPOSITORY/`.
+### 03 — Receipt → Inventory Automation
+1. Existing cover
+2. Actual full Receipt → Inventory workflow
+3. Receipt extraction
+4. Inventory/Loyverse view
+5. Inventory audit/result
 
-GitHub's official docs confirm that a repository can publish a static site from a branch/root folder.
-
-### Option B — GitHub Actions
-This project includes `.github/workflows/deploy.yml`. Set Pages source to **GitHub Actions** and push to `main`.
-
-## Before publishing
-Replace `hello@autoprov.dev` in `index.html` with the team's actual contact email if needed.
-
-## Notes
-The project descriptions are portfolio representations of the systems built by the AutoProv team. Customize project details and results only with claims that can be demonstrated to a client.
+All screenshots in this package are the user-provided project screenshots; no replacement/generated project screenshots were used.
