@@ -12,3 +12,29 @@
 
 @media(max-width:800px){.nav nav{display:none}.menu{display:block}.hero{padding-top:75px}.hero-grid{grid-template-columns:1fr 1fr}.hero-grid div{border-bottom:1px solid var(--line);padding-bottom:20px}.project{grid-template-columns:1fr}.project-visual{min-height:370px}.project-info{padding:38px 28px}.project-info h3{font-size:34px}.cap-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr}.team-wrap{padding:28px}.process-grid{grid-template-columns:1fr 1fr}.step:nth-child(3){border-left:1px solid #9dc738}.contact-card{padding:35px;display:block}.contact-card .btn{margin-top:25px}.footer{display:block}.footer span{display:block;margin:7px 0}.receipt-visual{gap:10px}.receipt{width:165px}.stock-card{width:130px}.lead-visual{grid-template-columns:1fr}.lead-data{grid-column:auto}}
 @media(max-width:500px){.container{padding-left:20px;padding-right:20px}h1{font-size:48px}.hero-copy{font-size:16px}.hero-actions{flex-direction:column}.hero-grid{margin-top:55px}.hero-grid strong{font-size:19px}.project-visual{padding:18px}.project-info{padding:30px 20px}.section{padding-top:75px;padding-bottom:75px}.process-grid{grid-template-columns:1fr}.step{border-left:1px solid #9dc738}.contact-card h2{font-size:39px}.receipt-visual{flex-direction:column}.flow-arrow{transform:rotate(90deg)}}
+/* AutoProv Team Branding */
+.brand img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 2px;
+}
+
+.person-photo {
+  width: 78px;
+  height: 78px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #4a4a4a;
+  flex: none;
+  background: #eee;
+}
+
+@media (max-width: 500px) {
+  .person-photo {
+    width: 68px;
+    height: 68px;
+  }
+}
